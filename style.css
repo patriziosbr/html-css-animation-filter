@@ -67,3 +67,102 @@
     width: 60px;
     height: 20px;
 }
+
+/*status hover*/
+.ex-1-square {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.ex-1-square:hover {
+    background-color: red;
+}
+.ex-2-square  {
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.ex-2-square:hover {
+    width: 100%;
+}
+.ex-3-square {
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+.ex-4-square {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out; 
+}
+.ex-4-square:hover {
+    opacity: 0;
+}
+.ex-5-square {
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.ex-5-square:hover {
+    transform: scale(1.5);
+}
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+.ex-7-img {
+    transition-duration: 0.5s;
+}
+.ex-7-img:hover {
+    filter: hue-rotate(90deg) opacity(.5);
+}
+.ex-8-img {
+    transition: all 0.8s ease-in-out;
+}
+.ex-8-img:hover {
+    filter: saturate(100%) sepia(100%);
+    border-radius: 20px;
+}
+.ex-9-img {
+    filter: blur(1px);
+    transition: all 0.4s cubic-bezier(1,0,.63,.99);
+}
+.ex-9-img:hover {
+    filter:brightness(.5) hue-rotate(45deg);
+    border-radius: 50px;
+    transform: scale(1.5); 
+}
+
+.ex-10-icon {
+    animation-name: myAnime;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnime {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation-name: myAnimedue;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes myAnimedue {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+
+
